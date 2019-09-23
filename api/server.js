@@ -11,7 +11,6 @@ const chefsRouter = require('../chefs/chefs-router.js');
 server.use(helmet());
 server.use(express.json());
 server.use(cors());
-server.use(session(sessionConfig));
 server.use(logger);
 
 

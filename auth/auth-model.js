@@ -7,7 +7,7 @@ module.exports = {
  
 };
 
-const get = () => {
+function get() {
   return db('users')
 };
 
