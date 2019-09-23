@@ -3,12 +3,14 @@ exports.up = function(knex, Promise) {
  
     return knex.schema.createTable('chefs',tbl => {
         tbl.increments();
-        tbl.string('name').notNullable();
+        tbl.string('first_name').notNullable();
+        tbl.string('last_name').notNullable();
         tbl.string('location').notNullable();
         tbl.string('contact').notNullable();
         tbl.string('username').unique().notNullable();
         tbl.string('password').notNullable();
-        tbl.string('avatar_url').notNullable();
+        tbl.string('email_address').notNullable();
+        tbl.string('avatar_url');
     })
   
     .createTable('recipes', tbl => {
@@ -18,7 +20,7 @@ exports.up = function(knex, Promise) {
         tbl.string('instructions').notNullable();;
         tbl.string('meal_type');
         tbl.integer('chef_id').notNullable().references('id').inTable('chefs').onDelete('CASCADE').onUpdate('CASCADE');
-        tbl.string('pic_url').notNullable();
+        tbl.string('pic_url');
     })
    
    
