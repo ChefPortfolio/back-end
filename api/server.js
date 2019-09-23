@@ -14,7 +14,7 @@ server.use(cors());
 server.use(logger);
 
 
-server.use('/api/auth/', authRouter);
+server.use('/api/auth', authRouter);
 server.use('/api/chefs', chefsRouter);
 // server.use('/api/recipes', recipesRouter);
 
