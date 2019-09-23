@@ -28,6 +28,29 @@ router.get('/refresh', restrict, (req,res) => {
   });
 }); //endpoint not tested
 
+// Token Generation
+
+function generateToken(user) {
+  const payload = {
+    username: user.username,
+    id: user.id,
+  };
+  const options = {
+    expiresIn: '55d',
+  };
+  return jwt.sign(payload, secrets.jwtSecret, options)
+}; 
+
+// for /refresh
+
+router.get('/refresh', restrict, (req,res) => {
+  Users.findBy(req.user.username)
+  .then(user => {
+      const token = generateToken(user);
+      res.status(200).json({ token })
+  });
+}); //endpoint not tested
+
 // for endpoints beginning with /api/auth
 
 router.post('/register', (req, res) => {
@@ -74,7 +97,9 @@ router.post('/login', (req, res) => {
       console.log(err);
       res.status(500).json({ message: "Error getting Users"});
     });
+
   });// endpoint works
+
 
 
 module.exports = router;
