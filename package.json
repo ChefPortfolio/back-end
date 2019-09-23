@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "server": "nodemon",
+    "test" : "node",
     "start": "node index.js"
   },
   "author": "Stacy Williams, Blake Prouty",
