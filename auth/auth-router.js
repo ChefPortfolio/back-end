@@ -1,7 +1,30 @@
 const router = require('express').Router();
 const bcrypt = require('bcryptjs');
-
+const restrict = require('./restricted-middleware')
 const Users = require('./auth-model.js');
+
+// Token Generation
+
+function generateToken(user) {
+  const payload = {
+    username: user.username,
+    id: user.id,
+  };
+  const options = {
+    expiresIn: '55d',
+  };
+  return jwt.sign(payload, secrets.jwtSecret, options)
+}; 
+
+// for /refresh
+
+router.get('/refresh', restrict, (req,res) => {
+  Users.findBy(req.user.username)
+  .then(user => {
+      const token = generateToken(user);
+      res.status(200).json({ token })
+  });
+}); //endpoint not tested
 
 // for endpoints beginning with /api/auth
 
@@ -26,8 +49,8 @@ router.post('/login', (req, res) => {
       .first()
       .then(user => {
         if (user && bcrypt.compareSync(password, user.password)) {
-          req.session.user = user;
-          res.status(200).json({ message: `Welcome ${user.username}!` });
+          const token = generateToken(user)
+          res.status(200).json({ message: `Welcome ${user.username}!`,token });
         } else {
           res.status(401).json({ message: 'Invalid Credentials' });
         }
@@ -36,5 +59,19 @@ router.post('/login', (req, res) => {
         res.status(500).json(error);
       });
   });//endpoint works
+
+  // Retrieve Users
+
+  router.get('/', restrict, (req, res) => {
+    Users.get()
+    .then(users => {
+      res.json(users);
+    })
+    .catch(err => {
+      console.log(err);
+      res.status(500).json({ message: "Error getting Users"});
+    });
+  });// endpoint not tested
+
 
 module.exports = router;
