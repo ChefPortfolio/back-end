@@ -4,17 +4,21 @@ module.exports = {
   findBy,
   add,
   get,
- 
+  login,
 };
 
 function get() {
-  return db('users')
+  return db('chefs')
 };
 
-function findBy({username}) {
-  return db('users').where({ username });
+function findBy({ username }) {
+  return db('chefs').where({ username }).first();
 };
+
+function login(filter) {
+  return db('chefs').where(filter);
+}
   
 function add(user) {
-  return db('users').insert(user);
+  return db('chefs').insert(user);
 };
