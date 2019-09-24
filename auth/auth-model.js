@@ -4,6 +4,7 @@ module.exports = {
   findBy,
   add,
   get,
+
   login,
 };
 
@@ -17,7 +18,7 @@ function findBy({ username }) {
 
 function login(filter) {
   return db('chefs').where(filter);
-}
+};
   
 function add(user) {
   return db('chefs').insert(user);
