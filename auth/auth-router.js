@@ -5,31 +5,6 @@ const Users = require('./auth-model.js');
 const jwt = require('jsonwebtoken');
 const secrets = require('../secrets');
 
-// Token Generation
-
-function generateToken(user) {
-  const payload = {
-    username: user.username,
-    id: user.id,
-  };
-  const options = {
-    expiresIn: '55d',
-  };
-  return jwt.sign(payload, secrets.jwtSecret, options)
-}; //working
-
-// for /refresh
-
-router.get('/refresh', restrict, (req,res) => {
-  Users.findBy(req.user.username)
-  .then(user => {
-      const token = generateToken(user);
-      res.status(200).json({ token })
-  });
-}); //endpoint not tested
-
-// Token Generation
-
 function generateToken(user) {
   const payload = {
     username: user.username,
