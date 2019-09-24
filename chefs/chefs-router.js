@@ -41,9 +41,10 @@ router.get('/:id/recipes', (req, res) => {
       res.status(200).json(recipes);
     })
     .catch(error => {
+      console.log(error)
       res.status(500).json({ message: 'error getting the recipes' });
     });
-});
+});//Tweak
 
 router.post('/', async (req, res) => {
   const chefData = req.body;
