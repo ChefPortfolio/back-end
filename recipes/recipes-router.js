@@ -6,14 +6,14 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
   Recipes
-    .get()
+    .getRecipes()
     .then(recipes => {
       res.status(200).json(recipes);
     })
     .catch(error => {
       res.status(500);
     });
-});
+});//endpoint works
 
 router.get('/:id', async (req, res) => {
   const { id } = req.params;
@@ -30,7 +30,7 @@ router.get('/:id', async (req, res) => {
     .catch(err => {
       res.status(500).json({ message: 'Failed to get recipe' });
     });
-});
+});//endpoint works
 
 
 router.post('/', async (req, res) => {
@@ -42,7 +42,7 @@ router.post('/', async (req, res) => {
   } catch (err) {
     res.status(500).json({ message: 'Failed to create new recipe' });
   }
-});
+});//endpoint workd
 
 router.put('/:id', async (req, res) => {
   const { id } = req.params;
@@ -59,7 +59,7 @@ router.put('/:id', async (req, res) => {
   } catch (err) {
     res.status(500).json({ message: 'Failed to update recipe' });
   }
-});
+});//endpoint works
 
 router.delete('/:id', async (req, res) => {
   const { id } = req.params;

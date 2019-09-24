@@ -21,10 +21,10 @@ function add(chef) {
 }
 
 function getChefRecipes(id) {
-  return db('posts as p')
-    // .innerJoin('users as u', 'p.user_id', '=', 'u.id')
-    // .select('p.id', 'p.contents', 'u.username as postedBy')
-    // .where({ user_id: id });
+  return db('chefs')
+  .join('recipes')
+  .where({ id })
+  
 }
 
 function update(id, changes) {

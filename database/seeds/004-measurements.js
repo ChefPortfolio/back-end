@@ -1,10 +1,10 @@
 
 exports.seed = function(knex) {
   // Deletes ALL existing entries
-  return knex('measurements').del()
+  return knex('measurement_recipe_ingredient').del()
     .then(function () {
       // Inserts seed entries
-      return knex('measurements').insert([
+      return knex('measurement_recipe_ingredient').insert([
         {id: 1, recipe_id: 1, ingredient_id:1, measurement:'whole'},
         {id: 2, recipe_id: 1, ingredient_id:2, measurement:'1 tablespoon'},
         {id: 3, recipe_id: 1, ingredient_id:3, measurement:'1 cup'},

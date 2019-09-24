@@ -116,14 +116,14 @@ exports.seed = function(knex) {
         {id: 107, ingredient_name: 'seasoning salt'},
         {id: 108, ingredient_name: 'beef sirloin steak'},
         
-        {id: 109, ingredient_name: ''},
-        {id: 110, ingredient_name: ''},
-        {id: 111, ingredient_name: ''},
-        {id: 112, ingredient_name: ''},
-        {id: 113, ingredient_name: ''},
-        {id: 114, ingredient_name: ''},
-        {id: 115, ingredient_name: ''},
-        {id: 116, ingredient_name: ''},
+        // {id: 109, ingredient_name: ''},
+        // {id: 110, ingredient_name: ''},
+        // {id: 111, ingredient_name: ''},
+        // {id: 112, ingredient_name: ''},
+        // {id: 113, ingredient_name: ''},
+        // {id: 114, ingredient_name: ''},
+        // {id: 115, ingredient_name: ''},
+        // {id: 116, ingredient_name: ''},
        
       ]);
     });

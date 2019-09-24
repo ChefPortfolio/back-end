@@ -6,7 +6,7 @@ const server = express();
 
 const authRouter = require('../auth/auth-router.js');
 const chefsRouter = require('../chefs/chefs-router.js');
-// const recipesRouter = require('../recipes/recipes-router.js');
+const recipesRouter = require('../recipes/recipes-router.js');
 
 
 server.use(helmet());
@@ -17,7 +17,7 @@ server.use(logger);
 
 server.use('/api/auth', authRouter);
 server.use('/api/chefs', chefsRouter);
-// server.use('/api/recipes', recipesRouter);
+server.use('/api/recipes', recipesRouter);
 
 function logger(req, res, next) {
   const method = req.method;

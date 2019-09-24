@@ -5,8 +5,8 @@ exports.up = function(knex, Promise) {
         tbl.increments();
         tbl.string('first_name').notNullable();
         tbl.string('last_name').notNullable();
-        tbl.string('location').notNullable();
-        tbl.string('contact').notNullable();
+        tbl.string('location');
+        tbl.string('contact');
         tbl.string('username').unique().notNullable();
         tbl.string('password').notNullable();
         tbl.string('email_address').notNullable();
@@ -46,3 +46,4 @@ exports.up = function(knex, Promise) {
       .dropTableIfExists('ingredients')
       .dropTableIfExists('measurement_recipe_ingredient')
       };
+

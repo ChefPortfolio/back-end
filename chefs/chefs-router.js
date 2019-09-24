@@ -6,14 +6,14 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
   Chefs
-    .get()
+    .getChefs()
     .then(chefs => {
       res.status(200).json(chefs);
     })
     .catch(error => {
       res.status(500);
     });
-});
+});//endpoint works
 
 router.get('/:id', async (req, res) => {
   const { id } = req.params;
@@ -22,7 +22,7 @@ router.get('/:id', async (req, res) => {
     .getById(id)
     .then(chef => {
       if (chef) {
-        res.json(user);
+        res.json(chef);
       } else {
         res.status(404).json({ message: 'Could not find chef with given id.' });
       }
@@ -30,7 +30,7 @@ router.get('/:id', async (req, res) => {
     .catch(err => {
       res.status(500).json({ message: 'Failed to get chef' });
     });
-});
+});//endpoint works
 
 router.get('/:id/recipes', (req, res) => {
   const { id } = req.params;
@@ -54,7 +54,7 @@ router.post('/', async (req, res) => {
   } catch (err) {
     res.status(500).json({ message: 'Failed to create new chef' });
   }
-});
+});//endpoint works
 
 router.put('/:id', async (req, res) => {
   const { id } = req.params;
@@ -71,7 +71,7 @@ router.put('/:id', async (req, res) => {
   } catch (err) {
     res.status(500).json({ message: 'Failed to update chef' });
   }
-});
+});//endpoint works
 
 router.delete('/:id', async (req, res) => {
   const { id } = req.params;
@@ -87,6 +87,6 @@ router.delete('/:id', async (req, res) => {
   } catch (err) {
     res.status(500).json({ message: 'Failed to delete chef' });
   }
-});
+});//endpoint works
 
 module.exports = router;

@@ -55,7 +55,7 @@ exports.seed = function(knex) {
           description:'Do not settle for ordinary ham and cheese sandwiches when you can make something deliciously different. The horseradish mustard dressing perfectly compliments the ham', 
           instructions:'Preheat oven to 250 degrees F (120 degrees C). Combine butter, mustard, onions, poppy seeds and dill seed. Spread insides of buns with this mixture. Place a slice of cheese and a slice of ham inside each bun. Wrap buns in foil and place in preheated oven. Bake for 15 to 20 minutes, until cheese has melted.', 
           meal_type:'lunch', 
-          chef_id:'2', 
+          chef_id:2, 
           pic_url:''
         },//ingredients checked
         {
@@ -64,7 +64,7 @@ exports.seed = function(knex) {
           description:'This is a great recipe that I found in my family recipe book. Judging from the weathered look of this recipe card, this was a family favorite.', 
           instructions:'In a large bowl, sift together the flour, baking powder, salt and sugar. Make a well in the center and pour in the milk, egg and melted butter; mix until smooth. Heat a lightly oiled griddle or frying pan over medium high heat. Pour or scoop the batter onto the griddle, using approximately 1/4 cup for each pancake. Brown on both sides and serve hot.',
           meal_type:'breakfast', 
-          chef_id:'2', 
+          chef_id:2, 
           pic_url:''
         },//ingredients checked
         {
@@ -73,7 +73,7 @@ exports.seed = function(knex) {
           description:'This turned out absolutely delicious! It is become a much requested dinner - and is fairly easy to make!', 
           instructions:'Preheat the oven to 400 degrees F (200 degrees C). Coat a 9x13 inch baking dish with cooking spray.  Lay each chop flat on cutting board, and with a sharp knife held parallel to the board, cut a pocket into the pork, leaving three sides intact. Stuff each chop with spinach, and then with cheese. Place panko crumbs in a shallow dish. Coat each chop with a thin layer of horseradish, and then roll in crumbs. Arrange chops in prepared baking dish. Sprinkle with Creole seasoning to taste. Bake in preheated oven for 45 minutes, or until brown and crispy.', 
           meal_type:'dinner', 
-          chef_id:'2', 
+          chef_id:2, 
           pic_url:''
         },//ingredients checked
         {
@@ -82,7 +82,7 @@ exports.seed = function(knex) {
           description:'A breakfast dish with instant ramen, cheese, and bacon makes for a happy-and easy-morning meal', 
           instructions:'Preheat oven to 350 degrees F. Cook bacon (in batches, if necessary) in a 12-inch ovenproof nonstick skillet over medium heat, turning, until crisp, about 8 minutes. Transfer bacon to paper towels to drain. Remove skillet from heat and pour off all but 1 tablespoon bacon fat.  Bring a saucepan of salted water to a boil. Break each ramen noodle block into 4 pieces and cook, stirring occasionally, until just tender, about 3 minutes. Drain noodles in a colander and rinse under cold water. Heat bacon fat in skillet over medium-high heat until shimmering. Add noodles, spreading them evenly to cover bottom of skillet. Cook noodles, pressing on them occasionally with a slotted spatula, until underside is golden brown, 3 to 6 minutes. Slide ramen cake onto a large plate, invert a second plate over top, then flip cake over (so cooked side is now on top). Add 1 tablespoon oil to skillet. Slide ramen cake back into skillet and cook over medium-high heat, pressing it occasionally, until underside is golden brown, 3 to 5 minutes. Remove skillet from heat. Sprinkle cheese evenly over ramen cake and transfer skillet to oven. Bake until cheese is melted, 5 to 10 minutes. Slide ramen cake onto a cutting board and cut into 4 wedges. Wipe out skillet. Heat butter and remaining 1/2 tablespoon oil in skillet over medium heat. Crack eggs into skillet and cook to desired doneness, 2 to 3 minutes for runny yolks. Serve each ramen wedge with a fried egg and 2 slices bacon.', 
           meal_type:'snack', 
-          chef_id:'2', 
+          chef_id:2, 
           pic_url:''
         },//ingredients checked
         {
@@ -91,7 +91,7 @@ exports.seed = function(knex) {
           description:'A simple way to treat SMALL duck - and it is a HUGE hit! It is like having steak. Use the breasts, save the rest of the bird for a stew or stock.', 
           instructions:'Stir together the Worcestershire sauce, olive oil, hot sauce, garlic, and pepper. Add the duck breasts, and toss well to coat. Cover, and marinate in the refrigerator for at least 30 minutes to overnight. Preheat a grill for medium-high heat. Grill the duck to desired doneness, about 5 minutes per side for medium-well, depending on the size of the breast, and the temperature of the grill.', 
           meal_type:'dinner', 
-          chef_id:'2', 
+          chef_id:2, 
           pic_url:''
         },//ingredients checked
         {
@@ -100,7 +100,7 @@ exports.seed = function(knex) {
           description:'This simple lemon cake is perfect for picnics and parties. It is moist and soft.', 
           instructions:'Preheat the oven to 350 degrees F (175 degrees C). Grease a 9-inch square baking pan. Beat sugar and butter together in a mixing bowl using an electric mixer until light and fluffy. Beat in eggs and vanilla extract. Sift flour and baking powder together in a separate bowl; add to creamed mixture. Pour in milk, lemon zest, and lemon juice and mix until you achieve a smooth batter. Spoon batter into the prepared pan. Bake in the preheated oven until a toothpick inserted into the center comes out clean, about 35 minutes', 
           meal_type:'dessert', 
-          chef_id:'3', 
+          chef_id:3, 
           pic_url:''
         },//ingredients checked
         {
@@ -109,7 +109,7 @@ exports.seed = function(knex) {
           description:'This soup is just very very good....you can find ramen noodles at most supermarkets, or at Asian grocery stores.', 
           instructions:'In a medium saucepan combine broth and noodles. Cover and bring to a boil over high heat; stir to break up noodles. Reduce heat to medium and add soy sauce, chili oil and ginger. Simmer, uncovered, for 10 minutes. Stir in sesame oil and garnish with green onions.', 
           meal_type:'', 
-          chef_id:'', 
+          chef_id:3, 
           pic_url:'dinner'
         },//ingredients checked
         {
@@ -154,7 +154,7 @@ exports.seed = function(knex) {
           description:'This beef and veggie burger adds extra produce to your burger patty making it more flavorful and juicy. Then it is topped with Fresh California Avocado, lettuce and tomato. It is great served with the Steakhouse Lite Ranch Sauce and fresh veggies like carrots and celery for dipping, making this a produce packed meal. Good source of Vitamin C, Calcium and Iron', 
           instructions:'In a bowl mix together the onion, bell pepper, mushrooms, steak sauce and lean ground beef. Mix very thoroughly with your hands to combine all ingredients. Divide the mixture into equal portions. With your hands press each portion into a ball and then shape into a patty. In a saute pan or on a flat griddle over medium low heat place the patties and grill for about 4 minutes, flip and grill an additional 4 minutes or until meat is thoroughly cooked. While beef and veggie burgers are grilling toast the buns. Top each bun base with the beef and veggie burger, then drizzle each with 1/2 tsp. steak sauce. Top with the lettuce, tomato, Fresh California Avocado and bun top.', 
           meal_type:'dinner', 
-          chef_id:'4', 
+          chef_id:4, 
           pic_url:''
         },
         {
@@ -163,7 +163,7 @@ exports.seed = function(knex) {
           description:'Nothing too complicated here; we pretty much poach eggs like everybody else, except we have got a little step in the middle that makes it easier if you are doing this for a larger group.', 
           instructions:'Fill a bowl with ice water. Fill a saucepan with cold water and place over medium heat; stir in vinegar and salt. Bring to a gentle, slow simmer and reduce heat to low.  Break each egg into a separate small ramekin; place a ramekin close to the surface of the water and gently pour egg into the simmering water. Let egg white set for a minute or two and use a silicone spatula to gently lift egg from the bottom of the pan to prevent sticking. Cook until white is firm and yolk is runny, about 6 minutes.  Lift poached egg from water using a slotted spoon and transfer gently to bowl of ice water to stop the cooking process. Reheat eggs for 1 1/2 to 2 minutes in very gently simmering water and remove with a slotted spoon. Tap bottom of slotted spoon containing egg on a dry paper towel to remove any excess water before serving.', 
           meal_type:'breakfast', 
-          chef_id:'4', 
+          chef_id:4, 
           pic_url:''
         },
         {
@@ -172,23 +172,23 @@ exports.seed = function(knex) {
           description:'My friends request this flavorful marinade every time they come over for a barbeque! This is enough to make one steak. Increase the recipe for a crowd!', 
           instructions:'In a medium bowl, mix soy sauce, Italian-style salad dressing, barbque sauce, vegetable oil, garlic, steak seasoning, seasoning salt, salt and ground black pepper. Place steak in the mixture. Cover and marinate in the refrigerator 12 hours, or overnight. Turn the steak once during marination. Preheat an outdoor grill for medium to high heat and lightly oil grate. Cook steak on the prepared grill 5 to 7 minutes per side, or to desired doneness.', 
           meal_type:'dinner', 
-          chef_id:'4', 
+          chef_id:4, 
           pic_url:''
-        },
-        {
-          id: 20, 
-          title: '', 
-          description:'', 
-          instructions:'', 
-          meal_type:'', 
-          chef_id:'', 
-          pic_url:''
-        },
-        {id: 21, title: '', description:'', instructions:'', meal_type:'', chef_id:'', pic_url:''},
-        {id: 22, title: '', description:'', instructions:'', meal_type:'', chef_id:'', pic_url:''},
-        {id: 23, title: '', description:'', instructions:'', meal_type:'', chef_id:'', pic_url:''},
-        {id: 24, title: '', description:'', instructions:'', meal_type:'', chef_id:'', pic_url:''},
-        {id: 25, title: '', description:'', instructions:'', meal_type:'', chef_id:'', pic_url:''}
+        }
+        // {
+        //   id: 20, 
+        //   title: '', 
+        //   description:'', 
+        //   instructions:'', 
+        //   meal_type:'', 
+        //   chef_id:'', 
+        //   pic_url:''
+        // },
+        // {id: 21, title: '', description:'', instructions:'', meal_type:'', chef_id:'', pic_url:''},
+        // {id: 22, title: '', description:'', instructions:'', meal_type:'', chef_id:'', pic_url:''},
+        // {id: 23, title: '', description:'', instructions:'', meal_type:'', chef_id:'', pic_url:''},
+        // {id: 24, title: '', description:'', instructions:'', meal_type:'', chef_id:'', pic_url:''},
+        // {id: 25, title: '', description:'', instructions:'', meal_type:'', chef_id:'', pic_url:''}
    
       ]);
     });
