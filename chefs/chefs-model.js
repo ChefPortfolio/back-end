@@ -21,11 +21,12 @@ function add(chef) {
 }
 
 function getChefRecipes(id) {
-  return db('chefs')
-  .join('recipes')
-  .where({ id })
+  return db('recipes as r')
+  .join('chefs as c', 'c.id', 'r.chef_id')
+  .select('r.title','r.description','r.instructions','r.meal_type','r.pic_url')
+  .where({ 'r.chef_id':id })
   
-}
+}// needs tweak
 
 function update(id, changes) {
   return db('chefs')
