@@ -6,7 +6,8 @@ const session = require('express-session')
 const server = express();
 
 const sessionConfig = {
-    name: 'BuildWeek', //sid
+    
+  name: 'BuildWeek', //sid
     secret: process.env.SESSION_SECRET || ' keep it secret, keep it safe',
     cookie: {
       maxAge: 1000 * 60 * 60 , // in milliseconds
