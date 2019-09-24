@@ -41,7 +41,7 @@ This application is deployed on [heroku](https://lambdacooks.herokuapp.com/) wit
 |POST _/api/auth/register_|Create a user account|`api/auth/register`|
 |POST _/api/auth/login_|Login a user|`api/auth/login`          |
 |POST _/recipes_|Create a new recipe (under construction)|`api/chefs/recipes`| 
-|GET _/recipes_|Get all recipes entries (under construction|`api/chefs/recipes`|
+|GET _/recipes_|Get all recipes entries associated to chef (name/id?) (under construction|`api/chefs/recipes`|
 |GET _/recipe/:id_|Get one recipe entry by ID (under construction)|`api/chefs/recipes/:id`|
 |PUT _/recipe/:id_|Update a recipe by ID (under construction)|`api/chefs/recipes/:id`|
 |DELETE _/recipe/:id_|Delete a recipe by ID (under construction)|`api/chefs/recipes/:id`|
@@ -71,10 +71,31 @@ This application is deployed on [heroku](https://lambdacooks.herokuapp.com/) wit
     "user": {
         "id": 5,
         "contact": "example@gmail.com",
-        "first_name": "Name",
-        "last_name": "Example",
-        "is_chef": false || true
+        "first_name": "John",
+        "last_name": "Doe",
+        "username": "JohnDoe5",
+        "is_chef": false || true ("future")
     },
-    "token": "yuyujhjiiGHJIKKHJhHJhKhnbGHj.eyJ1c2VySWQiOjUsImlzX2FkbWluIjpmYWxzZSwiaWF0IjoxNTY0NDk1OTg4LCJleHAiOjE1NjUxMDA3ODh9.SgCpomiiiioidhjdfI"
+}
+```
+```javascript
+{
+  username: 'JohnDoe5',
+  password: 'accepts any string from 6-32 chars'
+}
+```
+
+**Response spec:**
+
+```javascript
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cC548kpXVCJ9.hgjgkgooopooooopoKNHIOKKLOHjjoooooooo._7_DcsvIG6XlqRtmoqX3NmWnkREkFfkqswtmkCo1O2M",
+    "user": {
+        "id": 5,
+        "email": "example@gmail.com",
+        "is_chef": true, ("future")
+        "first_name": "John",
+        "last_name": "Doe"
+    }
 }
 ```
