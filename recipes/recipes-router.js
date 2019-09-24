@@ -42,7 +42,7 @@ router.post('/', async (req, res) => {
   } catch (err) {
     res.status(500).json({ message: 'Failed to create new recipe' });
   }
-});//endpoint workd
+});//endpoint works
 
 router.put('/:id', async (req, res) => {
   const { id } = req.params;
