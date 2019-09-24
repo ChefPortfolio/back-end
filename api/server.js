@@ -28,7 +28,7 @@ function logger(req, res, next) {
 }
 
 server.get("/", (req, res) => {
-  res.status(200).json({ message: "Chef's portfolio server is up and running!!" });
+  res.status(200).json({ message: "Cookbook's server is up and running!!" });
 });
 
 module.exports = server;
