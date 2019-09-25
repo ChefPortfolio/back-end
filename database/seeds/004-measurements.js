@@ -40,7 +40,7 @@ exports.seed = function(knex) {
         {id: 30, recipe_id: 4, ingredient_id:25, measurement:'2 fajita sized'},
         
         
-       // {id: 31, recipe_id: 4, ingredient_id:6, measurement:'1'},
+        {id: 31, recipe_id: 4, ingredient_id:6, measurement:'1'},
         {id: 32, recipe_id: 5, ingredient_id:26, measurement:'1 pound'},
         {id: 33, recipe_id: 5, ingredient_id:27, measurement:'1 cup'},
         {id: 34, recipe_id: 5, ingredient_id:28, measurement:'2 tablespoons'},
@@ -72,7 +72,7 @@ exports.seed = function(knex) {
         {id: 57, recipe_id: 7, ingredient_id:48, measurement:'1 tablespoon'},
         {id: 58, recipe_id: 7, ingredient_id:49, measurement:'1 1/4 cups'},     
         {id: 59, recipe_id: 7, ingredient_id:6, measurement:'1'},
-        {id: 50, recipe_id: 7, ingredient_id:9, measurement:'3 tablespoons'},
+        {id: 60, recipe_id: 7, ingredient_id:9, measurement:'3 tablespoons'},
         
         
         {id: 61, recipe_id: 8, ingredient_id:50, measurement:'4 6-ounce '},

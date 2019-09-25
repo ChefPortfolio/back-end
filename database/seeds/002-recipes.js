@@ -83,7 +83,7 @@ exports.seed = function(knex) {
           instructions:'Preheat oven to 350 degrees F. Cook bacon (in batches, if necessary) in a 12-inch ovenproof nonstick skillet over medium heat, turning, until crisp, about 8 minutes. Transfer bacon to paper towels to drain. Remove skillet from heat and pour off all but 1 tablespoon bacon fat.  Bring a saucepan of salted water to a boil. Break each ramen noodle block into 4 pieces and cook, stirring occasionally, until just tender, about 3 minutes. Drain noodles in a colander and rinse under cold water. Heat bacon fat in skillet over medium-high heat until shimmering. Add noodles, spreading them evenly to cover bottom of skillet. Cook noodles, pressing on them occasionally with a slotted spatula, until underside is golden brown, 3 to 6 minutes. Slide ramen cake onto a large plate, invert a second plate over top, then flip cake over (so cooked side is now on top). Add 1 tablespoon oil to skillet. Slide ramen cake back into skillet and cook over medium-high heat, pressing it occasionally, until underside is golden brown, 3 to 5 minutes. Remove skillet from heat. Sprinkle cheese evenly over ramen cake and transfer skillet to oven. Bake until cheese is melted, 5 to 10 minutes. Slide ramen cake onto a cutting board and cut into 4 wedges. Wipe out skillet. Heat butter and remaining 1/2 tablespoon oil in skillet over medium heat. Crack eggs into skillet and cook to desired doneness, 2 to 3 minutes for runny yolks. Serve each ramen wedge with a fried egg and 2 slices bacon.', 
           meal_type:'snack', 
           chef_id:2, 
-          pic_url:''
+          pic_url:'https://images.unsplash.com/photo-1555232967-53f6f9d380ed?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80'
         },//ingredients checked
         {
           id: 10, 
@@ -92,7 +92,7 @@ exports.seed = function(knex) {
           instructions:'Stir together the Worcestershire sauce, olive oil, hot sauce, garlic, and pepper. Add the duck breasts, and toss well to coat. Cover, and marinate in the refrigerator for at least 30 minutes to overnight. Preheat a grill for medium-high heat. Grill the duck to desired doneness, about 5 minutes per side for medium-well, depending on the size of the breast, and the temperature of the grill.', 
           meal_type:'dinner', 
           chef_id:2, 
-          pic_url:''
+          pic_url:'https://i.pinimg.com/originals/28/98/60/289860304609add1a8f35f08d70acd1c.jpg'
         },//ingredients checked
         {
           id: 11, 
@@ -101,16 +101,16 @@ exports.seed = function(knex) {
           instructions:'Preheat the oven to 350 degrees F (175 degrees C). Grease a 9-inch square baking pan. Beat sugar and butter together in a mixing bowl using an electric mixer until light and fluffy. Beat in eggs and vanilla extract. Sift flour and baking powder together in a separate bowl; add to creamed mixture. Pour in milk, lemon zest, and lemon juice and mix until you achieve a smooth batter. Spoon batter into the prepared pan. Bake in the preheated oven until a toothpick inserted into the center comes out clean, about 35 minutes', 
           meal_type:'dessert', 
           chef_id:3, 
-          pic_url:''
+          pic_url:'https://images.unsplash.com/photo-1508432310926-5712bcb79944?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=623&q=80'
         },//ingredients checked
         {
           id: 12, 
           title: 'Ramen Noodle Soup', 
           description:'This soup is just very very good....you can find ramen noodles at most supermarkets, or at Asian grocery stores.', 
           instructions:'In a medium saucepan combine broth and noodles. Cover and bring to a boil over high heat; stir to break up noodles. Reduce heat to medium and add soy sauce, chili oil and ginger. Simmer, uncovered, for 10 minutes. Stir in sesame oil and garnish with green onions.', 
-          meal_type:'', 
+          meal_type:'dinner', 
           chef_id:3, 
-          pic_url:'dinner'
+          pic_url:'https://images.unsplash.com/photo-1496114212242-bac8bd9de53d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80'
         },//ingredients checked
         {
           id: 13, 
@@ -119,7 +119,7 @@ exports.seed = function(knex) {
           instructions:'In a medium bowl, mix together the flour, sugar and cinnamon. Cut in the shortening until it is in pieces no larger than peas. Make a well in the center, and pour in the egg, egg yolk, Marsala wine, vinegar and water. Mix with a fork until the dough becomes stiff, then finish it by hand, kneading on a clean surface. Add a bit more water if needed to incorporate all of the dry ingredients. Knead for about 10 minutes, then cover and refrigerate for 1 to 2 hours. Divide the cannoli dough into thirds, and flatten each one just enough to get through the pasta machine. Roll the dough through successively thinner settings until you have reached the thinnest setting. Dust lightly with flour if necessary. Place the sheet of dough on a lightly floured surface. Using a form or large glass or bowl, cut out 4 to 5 inch circles. Dust the circles with a light coating of flour. This will help you later in removing the shells from the tubes. Roll dough around cannoli tubes, sealing the edge with a bit of egg white. Heat the oil to 375 degrees F (190 degrees C) in a deep-fryer or deep heavy skillet. Fry shells on the tubes a few at a time for 2 to 3 minutes, until golden. Use tongs to turn as needed. Carefully remove using the tongs, and place on a cooling rack set over paper towels. Cool just long enough that you can handle the tubes, then carefully twist the tube to remove the shell. Using a tea towel may help you get a better grip. Wash or wipe off the tubes, and use them for more shells. Cooled shells can be placed in an airtight container and kept for up to 2 months. You should only fill them immediately or up to 1 hours before serving. To make the filling, stir together the ricotta cheese and confectioners sugar using a spoon. Fold in lemon zest and chocolate. Use a pastry bag to pipe into shells, filling from the center to one end, then doing the same from the other side. Dust with additional confectioners sugar and grated chocolate for garnish when serving.', 
           meal_type:'dessert', 
           chef_id: 3, 
-          pic_url:''
+          pic_url:'https://www.cookingclassy.com/wp-content/uploads/2015/02/cannoli9-srgb..jpg'
         },//ingredients checked
         {
           id: 14, 
@@ -128,7 +128,7 @@ exports.seed = function(knex) {
           instructions:'Lay tortilla on plate or flat surface. Layer Swiss chard, sprouts and pepper on tortilla. Pile turkey evenly in center of wrap. In a small bowl, whisk together vinegar, soy sauce, honey, salt and pepper to taste. Drizzle over turkey. Fold sides of tortilla to center. Fold bottom of tortilla up.',
           meal_type:'lunch', 
           chef_id: 3, 
-          pic_url:''
+          pic_url:'http://emilybites.com/wp-content/uploads/2016/12/Apple-Cheddar-Turkey-Wrap-2b-620x930.jpg'
         },//ingredients checked
         {
           id: 15, 
@@ -137,7 +137,7 @@ exports.seed = function(knex) {
           instructions:'In a saucepan bring water to a boil. Add rice and stir. Reduce heat, cover and simmer for 20 minutes. Set aside and allow rice to cool. Heat a large skillet or wok for 2 minutes. When the skillet or wok is hot, pour in vegetable oil, bean sprouts and onions. Mix well and cook for 3 minutes. Mix in cooled rice and shrimp and cook for another 3 minutes. Stirring constantly. Mix in green onions, eggs, salt, pepper, soy sauce and sesame oil. Cook for another 4 minutes, stirring continuously, until eggs are cooked and everything is blended evenly.', 
           meal_type:'dinner', 
           chef_id:3, 
-          pic_url:''
+          pic_url:'https://natashaskitchen.com/wp-content/uploads/2018/09/Shrimp-Fried-Rice-3.jpg'
         },//ingredients checked
         {
           id: 16, 
@@ -146,7 +146,7 @@ exports.seed = function(knex) {
           instructions:'Heat oven to 375 degrees F. Beat butter, sugars, pudding mix and vanilla in large bowl with mixer until blended. Add eggs and baking soda; mix well. Gradually beat in flour. Stir in chocolate morsels, cranberries and nuts. Drop teaspoonfuls of dough, 2 inches apart, onto baking sheets. Bake 8 to 10 min. or until golden brown. Cool on baking sheets 3 min. Remove to wire racks; cool completely. Dip half of each cookie into melted chocolate. Place on waxed-paper covered baking sheet; let stand until chocolate is firm.', 
           meal_type:'dessert', 
           chef_id:4, 
-          pic_url:''
+          pic_url:'https://www.cookingclassy.com/wp-content/uploads/2017/11/chocolate-dipped-cranberry-cookies-3.jpg'
         },//ingredients checked
         {
           id: 17, 
@@ -173,7 +173,7 @@ exports.seed = function(knex) {
           instructions:'In a medium bowl, mix soy sauce, Italian-style salad dressing, barbque sauce, vegetable oil, garlic, steak seasoning, seasoning salt, salt and ground black pepper. Place steak in the mixture. Cover and marinate in the refrigerator 12 hours, or overnight. Turn the steak once during marination. Preheat an outdoor grill for medium to high heat and lightly oil grate. Cook steak on the prepared grill 5 to 7 minutes per side, or to desired doneness.', 
           meal_type:'dinner', 
           chef_id:4, 
-          pic_url:''
+          pic_url:'https://therecipecritic.com/wp-content/uploads/2018/01/worlds_best_steak_marinade-1-of-1.jpg'
         },
         {
           id: 20, 
@@ -182,7 +182,7 @@ exports.seed = function(knex) {
           instructions:'In a glass jar with a lid, mix together olive oil, white vinegar, sugar, and soy sauce. Close the lid, and shake until well mixed. Combine the bok choy, green onions, almonds, and chow mein noodles in a salad bowl. Toss with dressing, and serve.', 
           meal_type:'snack', 
           chef_id:'4', 
-          pic_url:''
+          pic_url:'https://i1.wp.com/whiteplateblankslate.com/wp-content/uploads/2018/06/bok-choy-salad.jpg?fit=900%2C1345'
         },
         {
           id: 21, 
@@ -191,7 +191,7 @@ exports.seed = function(knex) {
           instructions:'For sauce: Combine all sauce ingredients with 1/2 cup water in a medium bowl; set aside for flavors to develop while making crust. Freeze remaining paste . For crusts: Combine 2 cups of flour with the dry yeast, sugar and salt. Add the water and oil and mix until well blended (about 1 minute). Gradually add enough remaining flour slowly, until a soft, sticky dough ball is formed. Knead for about 4 minutes, on a floured surface, until dough is smooth and elastic. Add more flour, if needed. (If using RapidRise(R) Yeast, let dough rest, covered, for 10 minutes.)  Divide dough in half. Pat each half (with floured hands) into a 12-inch greased pizza pan OR roll dough to fit pans. For pizzas: Preheat oven to 425 degrees F. Top crusts with sauce, pepperoni and cheese. Bake for 18 to 20 minutes until crusts are browned and cheese is bubbly. For best results, rotate pizza pans between top and bottom oven racks halfway through baking.',
           meal_type:'dinner', 
           chef_id:'5', 
-          pic_url:''
+          pic_url:'https://ohsweetbasil.com/wp-content/uploads/2013/04/Want-the-perfect-recipe-for-pepperoni-Pizza-that-tastes-as-good-as-your-favorite-takeout-Click-through-ohsweetbasil.com_-e1414729085254.jpg'
           },
          {
            id: 22, 
@@ -200,7 +200,7 @@ exports.seed = function(knex) {
            instructions:'In a medium bowl, combine the mango, avocado, tomatoes, jalapeno, cilantro, and garlic. Stir in the salt, lime juice, red onion, and olive oil. To blend the flavors, refrigerate for about 30 minutes before serving.', 
            meal_type:'snacks', 
            chef_id:'5', 
-           pic_url:''
+           pic_url:'https://cdn.deliciousmeetshealthy.com/wp-content/uploads/2015/09/Mango-Avocado-Salsa-1.jpg'
           },
          {
            id: 23, 
@@ -209,7 +209,7 @@ exports.seed = function(knex) {
            instructions:'Preheat oven to 350 degrees F (175 degrees C). Stir together the flour, baking powder, baking soda, and cinnamon. Set aside. In a large bowl, cream together the margarine and 1 cup of white sugar until light and fluffy. Beat in the egg and maple syrup. Gradually blend in the dry ingredients until just mixed. In a small dish, mix together the remaining 1/2 cup white sugar and the maple sugar. Roll dough into 1 inch balls, and roll the balls in the sugar mixture. Place cookies 2 inches apart on ungreased cookie sheets. Bake 8 to 10 minutes in the preheated oven. Cookies will be crackly on top and look wet in the middle. Remove from cookie sheets to cool on wire racks.', 
            meal_type:'dessert', 
            chef_id:'5', 
-           pic_url:''
+           pic_url:'https://i1.wp.com/www.alattefood.com/wp-content/uploads/2016/12/Maple-Snickerdoodles-64.jpg?fit=1750%2C3150&ssl=1'
         },
          {
            id: 24, 
@@ -218,7 +218,7 @@ exports.seed = function(knex) {
            instructions:'Bring a large pot of lightly salted water to a boil. Cook linguine at a boil until tender yet firm to the bite, about 8 minutes. While pasta cooks, melt 2 tablespoons butter in a skillet over medium heat. Add garlic and cook until fragrant and lightly browned, about 1 minute. Add shrimp and cook until tails start curling in, about 2 minutes per side. Add remaining butter, Pinot Grigio, lemon juice, half-and-half, and Parmesan cheese. Stir to incorporate. Drain linguine and divide noodles between 2 bowls. Serve shrimp mixture on top and garnish with parsley.', 
            meal_type:'dinner', 
            chef_id:'5', 
-           pic_url:''
+           pic_url:'https://juliasalbum.com/wp-content/uploads/2018/01/39785464471_d30ce2835e_c.jpg'
           },
         {
           id: 25, 
@@ -227,7 +227,7 @@ exports.seed = function(knex) {
           instructions:'Stir together the garlic powder, basil, and salt in a small bowl; rub in equal amounts onto the salmon fillets. Melt the butter in a skillet over medium heat; cook the salmon in the butter until browned and flaky, about 5 minutes per side. Serve each piece of salmon with a lemon wedge', 
           meal_type:'dinner', 
           chef_id:'5', 
-          pic_url:''
+          pic_url:'https://i0.wp.com/themom100.com/wp-content/uploads/2015/12/Crow_30D_Shoot-Images-007-2-600x900.jpg?resize=550%2C825'
         }
    
       ]);
