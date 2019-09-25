@@ -11,7 +11,7 @@ exports.seed = function(knex) {
           instructions:'Toss chicken pieces with 1 tablespoon kosher salt. Transfer chicken to a bowl; cover and refrigerate overnight. Whisk buttermilk, pickle brine, hot sauce, and egg together in a mixing bowl. Pour marinade over chicken and stir to ensure each piece is thoroughly coated. Cover and let chicken marinate in refrigerator 2 to 4 hours. Mix flour and salt together in a shallow flat dish. Remove chicken from marinade and blot with paper towels. Reserve marinade. Toss chicken in flour until thoroughly coated. Return chicken to marinade, coating all sides; remove chicken from marinade allowing excess to drip back into the bowl. Coat the chicken once again in flour mixture. Place on a rack. Repeat with all chicken pieces. Allow to sit out about 15 minutes to allow coating to dry out a bit. Place butter and lard in a large pot. Add cayenne pepper, brown sugar, paprika, garlic powder, kosher salt, and black pepper. Place over medium-high heat. Cook and stir until fats melt. Remove from heat; keep sauce warm. Fill cast iron skillet about 1/3 of the way with vegetable oil. Heat oil to 350 degrees F over medium-high heat. Carefully place chicken into hot oil, skin side down. Maintain an oil temperature of 325 degrees F, adjusting heat as need. Fry until instant read thermometer reads 160 degrees F, 8 to 10 minutes per side. Transfer chicken to a rack to drain. Brush with the sauce on both sides.',
           meal_type:'dinner', 
           chef_id: 1 ,
-          pic_url:''
+          pic_url:'https://i0.wp.com/www.fromachefskitchen.com/wp-content/uploads/2018/05/Nashville-Style-Hot-Fried-Chicken-9.jpg?fit=600%2C900&ssl=1'
         },//ingredients checked
         {
           id: 2,
@@ -20,7 +20,7 @@ exports.seed = function(knex) {
           instructions:'Place potato slices into a large bowl of cold water as you slice. Drain, and rinse, then refill the bowl with water, and add the salt. Let the potatoes soak in the salty water for at least 30 minutes. Drain, then rinse and drain again. Heat oil in a deep-fryer to 365 degrees F (185 degrees C). Fry potato slices in small batches. Once they start turning golden, remove and drain on paper towels. Continue until all of the slices are fried. Season with additional salt if desired. Watch Now', 
           meal_type:'snack', 
           chef_id:1, 
-          pic_url:''
+          pic_url:'https://www.usfoods.com/etc/commerce/products/usfoods/70/95/7095673/image.img.jpg/cq_ck_1555442977066.jpg'
         },//ingredients checked
         {
           id: 3, 
@@ -29,7 +29,7 @@ exports.seed = function(knex) {
           instructions:'Melt the bacon grease in a non-stick pan over low heat. Cut a 1 1/2 to 2-inch hole from the center of the bread slice; lay in the hot skillet. When the side facing down is lightly toasted, about 2 minutes, flip and crack the egg into the hole; season with salt and pepper. Continue to cook until the egg is cooked and mostly firm. Flip again and cook 1 minute more to assure doneness on both sides. Serve immediately.', 
           meal_type:'breakfast', 
           chef_id:1, 
-          pic_url:''
+          pic_url:'https://iamafoodblog.com/wp-content/uploads/2019/01/how-to-make-egg-in-a-hole-5104.jpg'
         },//ingredients checked
         {
           id: 4, 
@@ -38,7 +38,7 @@ exports.seed = function(knex) {
           instructions:'Melt 1 tablespoon I Can not Believe It is Not Butter!(R) Spread in medium nonstick skillet over medium-high heat and cook vegetables and bacon, stirring occasionally, until vegetables are tender and bacon is crisp, about 4 minutes. Meanwhile, combine eggs and water in small bowl with wire whisk. Add eggs into skillet and stir until eggs are set. Remove egg and vegetable mixture from skillet and evenly divide between tortillas. Top with cheese; then roll. To seal and toast burritos, wipe skillet with paper towels and melt remaining 1/2 tablespoon Spread over medium heat. Arrange burritos, seam-side-down and cook, turning once, until golden brown, about 2 minutes.', 
           meal_type:'breakfast', 
           chef_id:1, 
-          pic_url:''
+          pic_url:'https://i.pinimg.com/originals/41/47/2a/41472a1a627474847d2066669b715fed.jpg'
         },//ingredients checked
         {
           id: 5, 
@@ -47,7 +47,7 @@ exports.seed = function(knex) {
           instructions:'In a large skillet over medium heat, combine chicken, lemonade, olive oil, lime juice, and Worcestershire sauce. Season with garlic powder, onion powder, and bay leaf. Simmer until chicken is no longer pink, and juices run clear, 15 to 20 minutes. Meanwhile, warm the tortillas in the oven or microwave until soft. When chicken is fully cooked, transfer to serving bowl. Place lettuce, tomatoes, cheese, salsa, and sour cream in serving dishes. Each person can create their own wrap, using their preferred ingredients.', 
           meal_type:'dinner', 
           chef_id:1, 
-          pic_url:''
+          pic_url:'https://gimmedelicious.com/wp-content/uploads/2019/01/Quick-Chicken-Tacos-food-truck-style-9.jpg'
         },//ingredients checked
         {
           id: 6, 
@@ -56,7 +56,7 @@ exports.seed = function(knex) {
           instructions:'Preheat oven to 250 degrees F (120 degrees C). Combine butter, mustard, onions, poppy seeds and dill seed. Spread insides of buns with this mixture. Place a slice of cheese and a slice of ham inside each bun. Wrap buns in foil and place in preheated oven. Bake for 15 to 20 minutes, until cheese has melted.', 
           meal_type:'lunch', 
           chef_id:2, 
-          pic_url:''
+          pic_url:'https://lilluna.com/wp-content/uploads/2018/03/Ham-and-Swiss-Sliders-LL3.jpg'
         },//ingredients checked
         {
           id: 7, 
@@ -65,7 +65,7 @@ exports.seed = function(knex) {
           instructions:'In a large bowl, sift together the flour, baking powder, salt and sugar. Make a well in the center and pour in the milk, egg and melted butter; mix until smooth. Heat a lightly oiled griddle or frying pan over medium high heat. Pour or scoop the batter onto the griddle, using approximately 1/4 cup for each pancake. Brown on both sides and serve hot.',
           meal_type:'breakfast', 
           chef_id:2, 
-          pic_url:''
+          pic_url:'https://images.unsplash.com/photo-1506084868230-bb9d95c24759?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80'
         },//ingredients checked
         {
           id: 8, 
@@ -74,7 +74,7 @@ exports.seed = function(knex) {
           instructions:'Preheat the oven to 400 degrees F (200 degrees C). Coat a 9x13 inch baking dish with cooking spray.  Lay each chop flat on cutting board, and with a sharp knife held parallel to the board, cut a pocket into the pork, leaving three sides intact. Stuff each chop with spinach, and then with cheese. Place panko crumbs in a shallow dish. Coat each chop with a thin layer of horseradish, and then roll in crumbs. Arrange chops in prepared baking dish. Sprinkle with Creole seasoning to taste. Bake in preheated oven for 45 minutes, or until brown and crispy.', 
           meal_type:'dinner', 
           chef_id:2, 
-          pic_url:''
+          pic_url:'https://food.fnr.sndimg.com/content/dam/images/food/fullset/2008/1/7/0/EI1103_Pork_Chops.jpg.rend.hgtvcom.826.620.suffix/1371585667101.jpeg'
         },//ingredients checked
         {
           id: 9, 
