@@ -1,7 +1,7 @@
 
 exports.seed = function(knex) {
   // Deletes ALL existing entries
-  return knex('recipes').del()
+  return knex('recipes').truncate()
     .then(function () {
       // Inserts seed entries
       return knex('recipes').insert([
@@ -174,22 +174,62 @@ exports.seed = function(knex) {
           meal_type:'dinner', 
           chef_id:4, 
           pic_url:''
+        },
+        {
+          id: 20, 
+          title: 'Bok Choy Salad', 
+          description:'You would think that raw baby bok choy would give this salad a bitter taste, but the dressing makes all the difference.', 
+          instructions:'In a glass jar with a lid, mix together olive oil, white vinegar, sugar, and soy sauce. Close the lid, and shake until well mixed. Combine the bok choy, green onions, almonds, and chow mein noodles in a salad bowl. Toss with dressing, and serve.', 
+          meal_type:'snack', 
+          chef_id:'4', 
+          pic_url:''
+        },
+        {
+          id: 21, 
+          title: 'Homemade Pepperoni Pizza', 
+          description:'Quick, Easy and Delicious-Homemade pizza crust and tomato sauce has never been easier-and this recipe for pepperoni pizza produces a delicious classic!', 
+          instructions:'For sauce: Combine all sauce ingredients with 1/2 cup water in a medium bowl; set aside for flavors to develop while making crust. Freeze remaining paste . For crusts: Combine 2 cups of flour with the dry yeast, sugar and salt. Add the water and oil and mix until well blended (about 1 minute). Gradually add enough remaining flour slowly, until a soft, sticky dough ball is formed. Knead for about 4 minutes, on a floured surface, until dough is smooth and elastic. Add more flour, if needed. (If using RapidRise(R) Yeast, let dough rest, covered, for 10 minutes.)  Divide dough in half. Pat each half (with floured hands) into a 12-inch greased pizza pan OR roll dough to fit pans. For pizzas: Preheat oven to 425 degrees F. Top crusts with sauce, pepperoni and cheese. Bake for 18 to 20 minutes until crusts are browned and cheese is bubbly. For best results, rotate pizza pans between top and bottom oven racks halfway through baking.',
+          meal_type:'dinner', 
+          chef_id:'5', 
+          pic_url:''
+          },
+         {
+           id: 22, 
+           title: 'Avocado, Tomato and Mango Salsa', 
+           description:'Looking for a refreshing salsa for a warm summer evening? This is our favorite. Serve with tortilla chips. This is also fantastic served on white fish.', 
+           instructions:'In a medium bowl, combine the mango, avocado, tomatoes, jalapeno, cilantro, and garlic. Stir in the salt, lime juice, red onion, and olive oil. To blend the flavors, refrigerate for about 30 minutes before serving.', 
+           meal_type:'snacks', 
+           chef_id:'5', 
+           pic_url:''
+          },
+         {
+           id: 23, 
+           title: 'Ultimate Maple Snickerdoodles', 
+           description:'These have been voted the number one cookie that I bake (and I bake a lot!), and are loved by all who eat them. They are chewy mapley good!', 
+           instructions:'Preheat oven to 350 degrees F (175 degrees C). Stir together the flour, baking powder, baking soda, and cinnamon. Set aside. In a large bowl, cream together the margarine and 1 cup of white sugar until light and fluffy. Beat in the egg and maple syrup. Gradually blend in the dry ingredients until just mixed. In a small dish, mix together the remaining 1/2 cup white sugar and the maple sugar. Roll dough into 1 inch balls, and roll the balls in the sugar mixture. Place cookies 2 inches apart on ungreased cookie sheets. Bake 8 to 10 minutes in the preheated oven. Cookies will be crackly on top and look wet in the middle. Remove from cookie sheets to cool on wire racks.', 
+           meal_type:'dessert', 
+           chef_id:'5', 
+           pic_url:''
+        },
+         {
+           id: 24, 
+           title: 'Creamy Shrimp Scampi with Half-and-Half', 
+           description:'Dinner does not have to take forever -- prove it with this fast and delicious shrimp scampi recipe.', 
+           instructions:'Bring a large pot of lightly salted water to a boil. Cook linguine at a boil until tender yet firm to the bite, about 8 minutes. While pasta cooks, melt 2 tablespoons butter in a skillet over medium heat. Add garlic and cook until fragrant and lightly browned, about 1 minute. Add shrimp and cook until tails start curling in, about 2 minutes per side. Add remaining butter, Pinot Grigio, lemon juice, half-and-half, and Parmesan cheese. Stir to incorporate. Drain linguine and divide noodles between 2 bowls. Serve shrimp mixture on top and garnish with parsley.', 
+           meal_type:'dinner', 
+           chef_id:'5', 
+           pic_url:''
+          },
+        {
+          id: 25, 
+          title: 'Super Simple Salmon', 
+          description:'This is a very simple but delicious way to prepare fresh salmon using just a few ingredients from your pantry.', 
+          instructions:'Stir together the garlic powder, basil, and salt in a small bowl; rub in equal amounts onto the salmon fillets. Melt the butter in a skillet over medium heat; cook the salmon in the butter until browned and flaky, about 5 minutes per side. Serve each piece of salmon with a lemon wedge', 
+          meal_type:'dinner', 
+          chef_id:'5', 
+          pic_url:''
         }
-        // {
-        //   id: 20, 
-        //   title: '', 
-        //   description:'', 
-        //   instructions:'', 
-        //   meal_type:'', 
-        //   chef_id:'', 
-        //   pic_url:''
-        // },
-        // {id: 21, title: '', description:'', instructions:'', meal_type:'', chef_id:'', pic_url:''},
-        // {id: 22, title: '', description:'', instructions:'', meal_type:'', chef_id:'', pic_url:''},
-        // {id: 23, title: '', description:'', instructions:'', meal_type:'', chef_id:'', pic_url:''},
-        // {id: 24, title: '', description:'', instructions:'', meal_type:'', chef_id:'', pic_url:''},
-        // {id: 25, title: '', description:'', instructions:'', meal_type:'', chef_id:'', pic_url:''}
    
       ]);
     });
-};
+  }

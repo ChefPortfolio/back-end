@@ -1,7 +1,7 @@
 
 exports.seed = function(knex) {
   // Deletes ALL existing entries
-  return knex('ingredients').del()
+  return knex('ingredients').truncate()
     .then(function () {
       // Inserts seed entries
       return knex('ingredients').insert([
@@ -116,14 +116,33 @@ exports.seed = function(knex) {
         {id: 107, ingredient_name: 'seasoning salt'},
         {id: 108, ingredient_name: 'beef sirloin steak'},
         
-        // {id: 109, ingredient_name: ''},
-        // {id: 110, ingredient_name: ''},
-        // {id: 111, ingredient_name: ''},
-        // {id: 112, ingredient_name: ''},
-        // {id: 113, ingredient_name: ''},
-        // {id: 114, ingredient_name: ''},
-        // {id: 115, ingredient_name: ''},
-        // {id: 116, ingredient_name: ''},
+        {id: 109, ingredient_name: 'baby bok choy'},
+        {id: 110, ingredient_name: 'slivered toasted almonds'},
+        {id: 111, ingredient_name: 'chow mein noodles'},
+        
+        {id: 112, ingredient_name: 'tomato paste'},
+        {id: 113, ingredient_name: 'dried oregano'},
+        {id: 114, ingredient_name: 'basil'},
+        {id: 115, ingredient_name: 'yeast'},
+        {id: 116, ingredient_name: 'pepperoni'},
+        {id: 117, ingredient_name: 'mozzarella cheese'},
+       
+        {id: 118, ingredient_name: 'mango'},
+        {id: 119, ingredient_name: 'jalapeno'},
+        {id: 120, ingredient_name: 'cilantro'},
+        {id: 121, ingredient_name: 'red onion'},
+        
+        {id: 122, ingredient_name: 'maple syrup'},
+        {id: 123, ingredient_name: 'maple sugar'},
+        
+        {id: 124, ingredient_name: 'linguine pasta'},
+        {id: 125, ingredient_name: 'jumbo shrimp'},
+        {id: 126, ingredient_name: 'Pinot Grigio wine'},
+        {id: 127, ingredient_name: 'half-and-half'},
+        {id: 128, ingredient_name: 'Parmesan cheese'},
+        {id: 129, ingredient_name: 'parsley'},
+        {id: 130, ingredient_name: 'salmon'},
+        {id: 131, ingredient_name: 'lemon'}
        
       ]);
     });
