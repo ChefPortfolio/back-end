@@ -9,7 +9,9 @@ module.exports = {
 };
 
 function getRecipes() {
-  return db('recipes');
+  return db('recipes as r')
+  .join('chefs as c', 'c.id','r.chef_id')
+  .select('c.avatar_url','r.title','r.description','r.instructions','r.meal_type','r.pic_url');
 }
 function getById(id) {
   return db('recipes').where({ id });
