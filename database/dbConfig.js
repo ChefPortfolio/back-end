@@ -5,6 +5,6 @@ const secrets = require('../secrets.js');
 const environment = secrets.environment || 'development';
 const config = require('../knexfile.js')[environment];
 
-const db = knex(config.development);
 
-module.exports = db;
+
+module.exports = knex(config);
