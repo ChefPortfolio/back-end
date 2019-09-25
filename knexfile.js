@@ -1,3 +1,4 @@
+require('./secrets');
 
 module.exports = {
   development: {
