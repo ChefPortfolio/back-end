@@ -25,7 +25,6 @@ function getChefRecipes(id) {
   .join('chefs as c', 'c.id', 'r.chef_id')
   .select('r.title','r.description','r.instructions','r.meal_type','r.pic_url')
   .where({ 'r.chef_id':id })
-  
 };
 
 function update(id, changes) {

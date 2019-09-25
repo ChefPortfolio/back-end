@@ -41,7 +41,7 @@ This application is deployed on [heroku](https://lambdacooks.herokuapp.com/) wit
 |POST _/api/auth/register_|Create a user account|`api/auth/register`|
 |POST _/api/auth/login_|Login a user|`api/auth/login`          |
 |POST _/recipes_|Create a new recipe (under construction)|`api/chefs/recipes`| 
-|GET _/recipes_|Get all recipes entries associated to chef (name/id?) (under construction|`api/chefs/recipes`|
+|GET _/recipes_|Get all recipes entries associated to chef|`api/chefs/recipes`|
 |GET _/recipe/:id_|Get one recipe entry by ID (under construction)|`api/chefs/recipes/:id`|
 |PUT _/recipe/:id_|Update a recipe by ID (under construction)|`api/chefs/recipes/:id`|
 |DELETE _/recipe/:id_|Delete a recipe by ID (under construction)|`api/chefs/recipes/:id`|
@@ -54,12 +54,12 @@ This application is deployed on [heroku](https://lambdacooks.herokuapp.com/) wit
 
 ```javascript
 {
-    first_name: 'accepts letters from 2 -50 chars',
-    last_name: 'accepts letters from 2 -50 chars',
-    username: 'accepts numbers, letters from 2 -25 chars',
+    first_name: ('required') 'accepts letters from 2 -50 chars',
+    last_name: ('required')'accepts letters from 2 -50 chars',
+    username: ('required')'accepts numbers, letters from 2 -25 chars',
     location: 'accepts letters from 2 -50 chars',
-    contact: 'example@email.com',
-    password: 'accepts any string from 6-32 chars',
+    contact: ('required')'example@email.com',
+    password: ('required')'accepts any string from 6-32 chars',
     avatar_url: 'accepts any string from 6-32 chars',
 }
 ```
@@ -73,11 +73,13 @@ This application is deployed on [heroku](https://lambdacooks.herokuapp.com/) wit
         "contact": "example@gmail.com",
         "first_name": "John",
         "last_name": "Doe",
-        "username": "JohnDoe5",
-        "is_chef": false || true ("future")
+        "username": "JohnDoe5"
     },
 }
+
 ```
+#### POST _/auth/login_
+
 ```javascript
 {
   username: 'JohnDoe5',
@@ -93,9 +95,38 @@ This application is deployed on [heroku](https://lambdacooks.herokuapp.com/) wit
     "user": {
         "id": 5,
         "email": "example@gmail.com",
-        "is_chef": true, ("future")
         "first_name": "John",
         "last_name": "Doe"
+    }
+}
+```
+
+#### POST _/recipes_
+
+**Request spec:**
+
+```javascript
+{
+  title: 'Name of the recipe',
+  description: 'Description of recipe, typically brief',
+  instructions: 'How to make the recipe',
+  meal_type: 'Will record breakfast, lunch, dessert, snack, dinner',
+  chef_id: 'Identify which chef this belongs to',
+  pic_url: 'Picture of the recipe (img url)',
+}
+```
+
+**Response spec:**
+
+```javascript
+{
+    "recipe": {
+        "title": "Example Dish",
+        "description": "Louisiana Sweet Pickles",
+        "instructions": "Place pickles in jar with ...",
+        "meal_type": "Breakfast",
+        "chef_id": 2,
+        "pic_url": null
     }
 }
 ```
