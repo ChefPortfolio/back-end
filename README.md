@@ -40,11 +40,11 @@ This application is deployed on [heroku](https://lambdacooks.herokuapp.com/) wit
 |-|-|-|
 |POST _/api/auth/register_|Create a user account|`api/auth/register`|
 |POST _/api/auth/login_|Login a user|`api/auth/login`          |
-|POST _/recipes_|Create a new recipe (under construction)|`api/chefs/recipes`| 
+|POST _/recipes_|Create a new recipe |`api/chefs/recipes`| 
 |GET _/recipes_|Get all recipes entries associated to chef|`api/chefs/recipes`|
-|GET _/recipe/:id_|Get one recipe entry by ID (under construction)|`api/chefs/recipes/:id`|
-|PUT _/recipe/:id_|Update a recipe by ID (under construction)|`api/chefs/recipes/:id`|
-|DELETE _/recipe/:id_|Delete a recipe by ID (under construction)|`api/chefs/recipes/:id`|
+|GET _/recipe/:id_|Get one recipe entry by ID|`api/chefs/recipes/:id`|
+|PUT _/recipe/:id_|Update a recipe by ID|`api/chefs/recipes/:id`|
+|DELETE _/recipe/:id_|Delete a recipe by ID|`api/chefs/recipes/:id`|
 
 ### Request and Response Specifications
 
@@ -128,5 +128,97 @@ This application is deployed on [heroku](https://lambdacooks.herokuapp.com/) wit
         "chef_id": 2,
         "pic_url": null
     }
+}
+```
+#### PUT _/recipes_/2
+
+**Request spec:**
+
+```javascript
+{
+    title: "Tofu Tacos Updated",
+    description: "This recipe is quick and easy..",
+    instructions: "In a large skillet over medium heat, combine.." ,
+    meal_type: "dinner",
+    chef_id: 1,
+    pic_url: ""
+  }
+```
+
+**Response spec:**
+
+```javascript
+{
+    "recipe": {
+        "title": "Tofu Tacos Updated",
+    "description": "This recipe is quick and easy...",
+    "instructions": "In a large skillet over medium heat, combine..",
+    "meal_type": "dinner",
+    "chef_id": 1,
+    "pic_url": ""
+    }
+}
+```
+
+#### GET _/recipes_
+
+**Request spec:** Return all recipes(feed)
+
+**Responce spec:**
+
+```javascript
+[
+  {
+    "title": "Hot Ham and Cheese Sandwiches",
+    "description": "Do not settle for ordinary ham and cheese sandwiches...",
+    "instructions": "Preheat oven to 250 degrees F (120 degrees C)...",
+    "meal_type": "lunch",
+    "pic_url": ""
+  },
+  {
+    "title": "Old Fashioned Pancakes",
+    "description": "This is a great recipe...",
+    "instructions": "In a large bowl, sift together...",
+    "meal_type": "breakfast",
+    "pic_url": ""
+  },
+  {
+    "title": "Gouda and Spinach Stuffed Pork Chops",
+    "description": "This turned out absolutely delicious!!",
+    "instructions": "Preheat the oven to 400 degrees...",
+    "meal_type": "dinner",
+    "pic_url": ""
+  },
+}]
+```
+
+#### GET _/recipes/5_
+
+**Request spec:** Request a recipe by the :id.
+
+**Responce spec:**
+
+```javascript
+{
+    "recipe": {
+    "title": "Chicken Tacos",
+    "description": "This recipe is quick and easy...",
+    "instructions": "In a large skillet over medium heat...",
+    "meal_type": "dinner",
+    "chef_id": 1,
+    "pic_url": ""
+  }
+}
+```
+
+#### DELETE _/recipes/5_
+
+**Request spec:** The request specification for the `DELETE` requests is just the url.
+
+**Responce spec:**
+
+```javascript
+{
+  message: 'Recipe removed successfully'
 }
 ```
