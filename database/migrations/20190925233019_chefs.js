@@ -1,4 +1,5 @@
 
+
 exports.up = function(knex, Promise) {
  
     return knex.schema.createTable('chefs',tbl => {
@@ -46,4 +47,3 @@ exports.up = function(knex, Promise) {
     .dropTableIfExists('chefs')
     .dropTableIfExists('recipes')
     };
-
