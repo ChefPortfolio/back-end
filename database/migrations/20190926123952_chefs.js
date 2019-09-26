@@ -15,12 +15,12 @@ exports.up = function(knex, Promise) {
   
     .createTable('recipes', tbl => {
         tbl.increments();
-        tbl.string('title', 55).notNullable();
+        tbl.string('title', 255).notNullable();
         tbl.text('description');
-        tbl.text('instructions').notNullable();;
-        tbl.string('meal_type', 15);
+        tbl.text('instructions').notNullable();
+        tbl.string('meal_type', 55);
         tbl.integer('chef_id').notNullable().references('id').inTable('chefs').onUpdate('CASCADE').onDelete('CASCADE');
-        tbl.string('pic_url', 65);
+        tbl.string('pic_url', 200);
     })
    
    
