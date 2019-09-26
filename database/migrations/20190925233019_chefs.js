@@ -3,7 +3,7 @@
 exports.up = function(knex, Promise) {
  
     return knex.schema.createTable('chefs',tbl => {
-        tbl.increments().onUpdate().onUpdate();
+        tbl.increments();
         tbl.string('first_name').notNullable();
         tbl.string('last_name').notNullable();
         tbl.string('location');
@@ -42,8 +42,10 @@ exports.up = function(knex, Promise) {
   
   exports.down = function(knex, Promise) {
     return knex.schema
-    .dropTableIfExists('measurement_recipe_ingredient')
-    .dropTableIfExists('ingredients')
     .dropTableIfExists('chefs')
     .dropTableIfExists('recipes')
+    .dropTableIfExists('measurement_recipe_ingredient')
+    .dropTableIfExists('ingredients')
+    
+    
     };
