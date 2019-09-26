@@ -40,6 +40,7 @@ router.post('/', async (req, res) => {
     const [id] = await Recipes.add(recipeData);
     res.status(201).json({ created: id });
   } catch (err) {
+    console.log(err)
     res.status(500).json({ message: 'Failed to create new recipe' });
   }
 });//endpoint works

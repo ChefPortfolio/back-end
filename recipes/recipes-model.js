@@ -20,7 +20,6 @@ function getById(id) {
 function add(recipes){
   return db('recipes')
   .insert(recipes, 'id')
-  .then(([id]) => id)
 }
 
 function update(id, changes) {
