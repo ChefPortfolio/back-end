@@ -1,3 +1,5 @@
+
+
 exports.up = function(knex, Promise) {
  
     return knex.schema.createTable('chefs',tbl => {
@@ -40,8 +42,10 @@ exports.up = function(knex, Promise) {
   
   exports.down = function(knex, Promise) {
     return knex.schema
-    .dropTableIfExists('measurement_recipe_ingredient')
-    .dropTableIfExists('ingredients')
     .dropTableIfExists('chefs')
     .dropTableIfExists('recipes')
+    .dropTableIfExists('measurement_recipe_ingredient')
+    .dropTableIfExists('ingredients')
+    
+    
     };
