@@ -17,7 +17,10 @@ function getById(id) {
 };
 
 function add(chef) {
-  return db('chefs').insert(chef);
+  const [id] = db('chefs').insert(chef, id);
+  return db('chefs')
+  .where({ id })
+  .first();
 };
 
 function getChefRecipes(id) {
