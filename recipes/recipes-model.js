@@ -18,7 +18,7 @@ function getById(id) {
 }
 
 function add(recipe) {
-  return db('recipes').insert(recipe);
+  return db('recipes').insert(recipe, 'id');
 }
 
 function update(id, changes) {

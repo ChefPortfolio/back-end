@@ -17,10 +17,17 @@ function getById(id) {
 };
 
 function add(chef) {
+<<<<<<< HEAD
   const [id] =  db('chefs').insert(chef, id);
   return  db('chefs')
   .where ({ id })
   ,first();
+=======
+  const [id] = db('chefs').insert(chef, id);
+  return db('chefs')
+  .where({ id })
+  .first();
+>>>>>>> 6a1dbfa692e0ed2b0c1f1149280a9dae68657db4
 };
 
 function getChefRecipes(id) {
