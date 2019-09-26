@@ -1,8 +1,5 @@
-<<<<<<< HEAD:database/migrations/20190925233019_chefs.js
 
 
-=======
->>>>>>> 6a1dbfa692e0ed2b0c1f1149280a9dae68657db4:database/migrations/20190926132207_chefs.js
 exports.up = function(knex, Promise) {
  
     return knex.schema.createTable('chefs',tbl => {
@@ -47,12 +44,8 @@ exports.up = function(knex, Promise) {
     return knex.schema
     .dropTableIfExists('chefs')
     .dropTableIfExists('recipes')
-<<<<<<< HEAD:database/migrations/20190925233019_chefs.js
     .dropTableIfExists('measurement_recipe_ingredient')
     .dropTableIfExists('ingredients')
     
     
     };
-=======
-    };
->>>>>>> 6a1dbfa692e0ed2b0c1f1149280a9dae68657db4:database/migrations/20190926132207_chefs.js
