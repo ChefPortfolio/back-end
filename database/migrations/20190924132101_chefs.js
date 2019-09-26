@@ -2,7 +2,7 @@
 exports.up = function(knex, Promise) {
  
     return knex.schema.createTable('chefs',tbl => {
-        tbl.increments();
+        tbl.increments().onUpdate().onUpdate();
         tbl.string('first_name').notNullable();
         tbl.string('last_name').notNullable();
         tbl.string('location');
