@@ -17,8 +17,8 @@ function getById(id) {
 };
 
 function add(chef) {
-  const [id] = await db('chefs').insert(chef, id);
-  return db('chefs')
+  const [id] =  db('chefs').insert(chef, id);
+  return  db('chefs')
   .where ({ id })
   ,first();
 };
