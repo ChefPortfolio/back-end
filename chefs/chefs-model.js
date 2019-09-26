@@ -15,13 +15,11 @@ function getChefs() {
 function getById(id) {
   return db('chefs').where({ id });
 };
-
 function add(chef) {
-  const [id] = db('chefs').insert(chef, id);
   return db('chefs')
-  .where({ id })
-  .first();
-};
+  .insert(chef, 'id')
+  .then(([id]) => id)
+}
 
 function getChefRecipes(id) {
   return db('recipes as r')

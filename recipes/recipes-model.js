@@ -17,8 +17,10 @@ function getById(id) {
   return db('recipes').where({ id });
 }
 
-function add(recipe) {
-  return db('recipes').insert(recipe, 'id');
+function add(recipes){
+  return db('users')
+  .insert(recipes, 'id')
+  .then(([id]) => id)
 }
 
 function update(id, changes) {
