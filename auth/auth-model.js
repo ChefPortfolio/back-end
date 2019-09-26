@@ -20,5 +20,7 @@ function login(filter) {
 };
   
 function add(user) {
-  return db('chefs').insert(user, 'id');
-};
+  return db('chefs')
+  .insert(user, 'id')
+  .then(([id]) => id)
+}
