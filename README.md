@@ -2,7 +2,7 @@
 
 As a food blogger, I want to be able to show off my work and recipes. I have a lot of amazing pics from the recipes i’ve created I'd like to share with potential clients, but I need a site that is more professional than Instagram in order to do so. I don’t have time or skills to build my own unique website, I need a site that provides templates so I can just input some information and be done.
 
-THe Application is live [here](https://lambda.herokuapp.com/)
+THe Application is live [here](https://chefportfolio-stacy.herokuapp.com/)
 
 ## Installation
 
@@ -34,15 +34,15 @@ After that rename the file to `.env`
 
 ## Documentation
 
-This application is deployed on [heroku](https://lambdacooks.herokuapp.com/) with the following endpoints accessible
+This application is deployed on [heroku](https://chefportfolio-stacy.herokuapp.com/) with the following endpoints accessible
 
 |Method|Functionality|Endpoint|
 |-|-|-|
 |POST _/api/auth/register_|Create a user account|`api/auth/register`|
 |POST _/api/auth/login_|Login a user|`api/auth/login`          |
-|POST _/recipes_|Create a new recipe |`api/chefs/recipes`| 
-|GET _/recipes_|Get all recipes entries associated to chef|`api/chefs/recipes`|
-|GET _/recipe/:id_|Get one recipe entry by ID|`api/chefs/recipes/:id`|
+|POST _/recipes_|Create a new recipe |`api/recipes`| 
+|GET _/recipes_|Get all recipes entries|`api/recipes`|
+|GET _/recipe/:id_|Get recipes by a chef's ID|`api/chefs/:id/recipes`|
 |PUT _/recipe/:id_|Update a recipe by ID|`api/chefs/recipes/:id`|
 |DELETE _/recipe/:id_|Delete a recipe by ID|`api/chefs/recipes/:id`|
 
