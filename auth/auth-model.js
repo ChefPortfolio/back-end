@@ -21,6 +21,6 @@ function login(filter) {
   
 function add(user) {
   return db('chefs')
-  .insert(user, 'id')
+  .insert(user,'id')
   .then(([id]) => id)
 }
