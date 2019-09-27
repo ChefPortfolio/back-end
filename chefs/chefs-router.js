@@ -38,6 +38,7 @@ router.get('/:id/recipes', (req, res) => {
   Chefs
     .getChefRecipes(id)
     .then(recipes => {
+     console.log(recipes)
       res.status(200).json(recipes);
     })
     .catch(error => {
