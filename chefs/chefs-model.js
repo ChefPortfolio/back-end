@@ -24,7 +24,7 @@ function add(chef) {
 function getChefRecipes(id) {
   return db('recipes as r')
   .join('chefs as c', 'c.id', 'r.chef_id')
-  .select('r.title','r.description','r.instructions','r.meal_type','r.pic_url','c.avatar_url')
+  .select('r.title','r.id','r.description','r.instructions','r.meal_type','r.pic_url','c.avatar_url')
   .where({ 'r.chef_id':id })
 };
 
