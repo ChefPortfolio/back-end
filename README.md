@@ -2,7 +2,7 @@
 
 As a food blogger, I want to be able to show off my work and recipes. I have a lot of amazing pics from the recipes i’ve created I'd like to share with potential clients, but I need a site that is more professional than Instagram in order to do so. I don’t have time or skills to build my own unique website, I need a site that provides templates so I can just input some information and be done.
 
-THe Application is live [here](https://chefportfolio-stacy.herokuapp.com/)
+The Application is live [here](https://chefportfolio-stacy.herokuapp.com/)
 
 ## Installation
 
